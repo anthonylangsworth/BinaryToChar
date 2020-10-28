@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BinaryToChar": {
+      "commandName": "Project",
+      "commandLineArgs": "< Instagram.txt"
+    }
+  }
+}
