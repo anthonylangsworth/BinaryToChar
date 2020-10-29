@@ -10,7 +10,13 @@ namespace BinaryToChar
         static void Main(string[] args)
         {
             string input = 
-                @"00100000 01110011 01110100 01101111
+                @"01000011 01101111 01100001 01101100
+                  01110011 01100001 01100011 01101011
+                  00100000 01001110 01100101 01100010
+                  01110101 01101100 01100001 00101110
+                  00100000 01010100 01101000 01100101
+
+                  00100000 01110011 01110100 01101111
                   01101110 01100101 01110011 00101110
                   00100000 01001000 01100101 00100000
                   01101011 01100101 01100101 01110000
@@ -29,6 +35,8 @@ namespace BinaryToChar
                 {
                     Console.Out.Write(Encoding.UTF8.GetString(new byte[] { Convert.ToByte(byteString, 2) }));
                 }
+
+                // Comment this out to get it on one line
                 Console.Out.WriteLine();
             }
         }
